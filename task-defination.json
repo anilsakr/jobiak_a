@@ -1,0 +1,21 @@
+{
+  "family": "sinatra-hi",
+  "containerDefinitions": [
+    {
+      "name": "web",
+      "image": "811362161349.dkr.ecr.us-west-2.amazonaws.com/jobiak_a",
+      "cpu": 128,
+      "memoryReservation": 128,
+      "portMappings": [
+        {
+          "containerPort": 4567,
+          "protocol": "tcp"
+        }
+      ],
+      "command": [
+        "ruby", "hi.rb"
+      ],
+      "essential": true
+    }
+  ]
+}
